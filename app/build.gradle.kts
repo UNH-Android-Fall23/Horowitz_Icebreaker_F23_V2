@@ -16,6 +16,12 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    // Added to enable ViewBinding to link kotlin files to xml
+    buildFeatures {
+
+        viewBinding = true
+
+    }
 
     buildTypes {
         release {
