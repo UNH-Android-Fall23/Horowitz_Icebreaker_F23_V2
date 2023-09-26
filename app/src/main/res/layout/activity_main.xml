@@ -42,4 +42,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Last Name"
+        android:ems="10"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/prefName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Preferred Name"
+        android:ems="10"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
