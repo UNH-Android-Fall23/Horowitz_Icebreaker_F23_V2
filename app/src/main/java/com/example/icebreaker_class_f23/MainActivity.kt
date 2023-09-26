@@ -23,12 +23,26 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        binding.btnGetQuestion.setOnClickListener {
+        binding.btnGetQuestion.setOnClickListener {// Container for actions when getQuestion is pressed
 
             Log.d(TAG, "Get question button was pressed")
             binding.txtAnswer.setText("Button was Clicked")
             getQuestionsFromFirebase()
 
+        }
+
+        binding.btnSubmit.setOnClickListener {// Container for actions when submit is pressed
+
+            Log.d(TAG, "Submit button was pressed")
+
+            val firstName = binding.txtFirstName
+            val lastName = binding.txtLastName
+            val prefName = binding.prefName
+            val answer = binding.txtAnswer
+            Log.d(TAG, "Entered info is ${firstName.text}, ${lastName.text}, ${prefName.text}, ${answer.text}")
+
+            binding.txtAnswer.setText("${firstName.text}!")
+            firstName.setText("")
         }
 
 
