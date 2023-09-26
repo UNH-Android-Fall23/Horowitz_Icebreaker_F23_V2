@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
             Log.d(TAG, "Get question button was pressed")
             binding.txtAnswer.setText("Button was Clicked")
+            getQuestionsFromFirebase()
 
         }
 
@@ -37,6 +38,13 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
 
         super.onDestroy()
+
+    }
+
+    private fun getQuestionsFromFirebase() {
+
+        Log.d(TAG, "Fetching questions from database...")
+        binding.txtAnswer.setText("Doing database stuff")
 
     }
 }
