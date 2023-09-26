@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        binding.welcomeText.text = "Bindings are cool!"
+
 
     }
 }
